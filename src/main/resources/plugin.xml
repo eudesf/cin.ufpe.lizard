@@ -1,0 +1,31 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+
+<plugin>
+
+    <extension id="LizardTab"
+               point="org.protege.editor.core.application.WorkspaceTab">
+        <class value="org.protege.editor.core.ui.workspace.WorkspaceViewsTab"/>
+        <label value="Lizard WVT"/>
+        <index value="L"/>
+        <editorKitId value="OWLEditorKit"/>
+        <defaultViewConfigFileName value="viewconfig-lizardtab.xml"/>
+        <protegeDefaultTab value="true"/>
+    </extension>
+    
+ 	<extension id="LizardViewComponent"
+     		   point="org.protege.editor.core.application.ViewComponent">
+        <label value="Lizard VC"/>
+        <class value="cin.ufpe.lizard.LizardViewComponent"/>
+        <headerColor value="@org.protege.classcolor"/>
+        <category value="@org.protege.querycategory"/>
+    </extension>
+    
+    <extension id="OWLClassExpressionEditorViewComponent"
+     		   point="org.protege.editor.core.application.ViewComponent">
+        <label value="DL query"/>
+        <class value="org.coode.dlquery.OWLClassExpressionEditorViewComponent"/>
+        <headerColor value="@org.protege.classcolor"/>
+        <category value="@org.protege.querycategory"/>
+    </extension>
+    
+</plugin>

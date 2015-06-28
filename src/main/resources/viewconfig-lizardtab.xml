@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <VSNode splits="0.5 0.5">
+        <CNode>
+            <Component label="Asserted hierarchy">
+                <Property id="pluginId" value="org.protege.editor.owl.OWLAssertedClassHierarchy"/>
+            </Component>
+        </CNode>
+
+		<HSNode splits="0.3 0.7">
+	        <CNode>
+	            <Component label="DL Query">
+	                <Property id="pluginId" value="org.coode.dlquery.OWLClassExpressionEditorViewComponent"/>
+	            </Component>
+	        </CNode>
+	        <CNode>
+	            <Component label="Lizard">
+	                <Property id="pluginId" value="cin.ufpe.lizard.LizardViewComponent"/>
+	            </Component>
+	        </CNode>
+        </HSNode>
+    </VSNode>
+    
+</layout>
